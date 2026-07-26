@@ -1,8 +1,33 @@
 aid: electroflow
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/electroflow.png
 name: Electroflow
-description: Electroflow is a company surfaced as a portfolio company of union-square-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Electroflow Technologies is a United States deep-tech company (founded 2023,
+  headquartered in San Bruno, California) developing an electrochemical direct
+  lithium extraction (DLE) process that pulls lithium from dilute North American
+  brines containing under 200ppm lithium using renewable electricity and minimal
+  chemicals. Its cell uses anodes that absorb lithium ions from brine on one pass
+  and release them into a carbonate solution on the reverse pass, producing
+  battery-grade lithium carbonate that is reacted with iron and phosphate to make
+  lithium iron phosphate (LFP) cathode powder domestically — a three-step route
+  versus the traditional ten-step process, targeting LFP material at roughly 40%
+  below Chinese producers. The company raised a $10M seed round in October 2025
+  led by Union Square Ventures with Voyager Ventures, Fifty Years, and Harpoon
+  Ventures, and counts Breakthrough Energy among its backers. Electroflow is a
+  hardware and battery-materials company; it publishes no public API, SDK, or
+  developer documentation, so this profile carries identity and domain-security
+  signal only.
 url: https://raw.githubusercontent.com/api-evangelist/electroflow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +37,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Energy
+- Battery Materials
+- Lithium
+- Clean Technology
+- Manufacturing
+- Climate Tech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +55,12 @@ maintainers:
 common:
 - type: Website
   url: https://www.eflowtech.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/eflowtech
+- type: DomainSecurity
+  url: security/electroflow-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
